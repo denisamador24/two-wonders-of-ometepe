@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/drawable/icon_access_time.xml" value="0.2115" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_add_bus_barco.xml" value="0.18" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_add_category.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_add_driver.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_add_taxi.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_add_taxi_capo.xml" value="0.1" />
@@ -13,6 +14,7 @@
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_info_taxi.xml" value="0.1" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/card_list_local.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/fragment_home.xml" value="0.14545454545454545" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/fragment_profile.xml" value="0.18" />
       </map>

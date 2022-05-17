@@ -26,4 +26,12 @@
     <string name="car_license">RI 010101</string>
     <string name="price">Precio</string>
     <string name="route">Ruta</string>
+    <string name="select_category">Selecciona la categoría</string>
+    <string name="transport">Transporte</string>
+    <string name="local">Local</string>
+    <string name="hotel">Hotel</string>
+    <string name="restaurant">Restaurente</string>
+    <string name="bar">Bar</string>
+    <string name="park">Parqué</string>
+    <string name="beach">Playa</string>
 </resources>

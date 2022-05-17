@@ -43,6 +43,11 @@
         <item name="drawableTint">@color/dark_green</item>
     </style>
 
+    <style name="Standar_EditText">
+        <item name="android:textColorHint">@color/green</item>
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
     <style name="Style_InputName" parent="Style_EditTextInput">
         <item name="android:hint">@string/name</item>
         <item name="android:drawableStart">@drawable/icon_person</item>
@@ -95,6 +100,7 @@
     <style name="CardView_InputEditText" >
         <item name="android:drawablePadding">8dp</item>
         <item name="android:hint">20</item>
+        <item name="android:textColorHint">@color/green</item>
     </style>
 
     <style name="ButtonNavigationMain" >

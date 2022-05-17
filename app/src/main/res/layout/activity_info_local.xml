@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    style="@style/Text_Md"
+                    style="@style/Text_Sm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawablePadding="8dp"

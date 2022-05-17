@@ -52,7 +52,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/bus_ticket"/>
+                        android:text="@string/bus_ticket"
+                        style="@style/Text_Sm"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -78,7 +79,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/max_passengers"/>
+                        android:text="@string/max_passengers"
+                        style="@style/Text_Sm"/>
                 </LinearLayout>
 
 
@@ -101,6 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/driver"
+                        style="@style/Text_Md"
                         android:drawableLeft="@drawable/icon_person"/>
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -113,12 +116,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
+                        style="@style/Text_Md"
                         android:text="@string/name"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/phone_number"
+                        style="@style/Text_Sm"
+                        android:layout_marginTop="8dp"
                         android:textAlignment="center"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -145,7 +151,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/schedule_time"/>
+                        android:text="@string/schedule_time"
+                        style="@style/Text_Sm"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -170,7 +177,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/license"/>
+                        android:text="@string/license"
+                        style="@style/Text_Sm"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -181,6 +189,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="44dp"
                 android:text="@string/description"
+                style="@style/Text_Md"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView1" />
@@ -191,6 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:text="TextView"
+                style="@style/Text_Sm"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/infoBusBraco_titleDescription" />
@@ -201,6 +211,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="44dp"
                 android:text="@string/service"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/infoBusBarco_description" />
@@ -211,6 +222,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:text="TextView"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/infoBusBarco_titleService" />

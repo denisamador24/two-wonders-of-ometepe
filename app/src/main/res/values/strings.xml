@@ -34,4 +34,7 @@
     <string name="bar">Bar</string>
     <string name="park">Parqué</string>
     <string name="beach">Playa</string>
+    <string name="adress">Dirección</string>
+    <string name="schudules">Horario</string>
+    <string name="email">Correo</string>
 </resources>

@@ -37,4 +37,15 @@
     <string name="adress">Dirección</string>
     <string name="schudules">Horario</string>
     <string name="email">Correo</string>
+    <string name="home">Inicio</string>
+    <string name="profile">Perfil</string>
+
+    <string name="restaurante">Restaurante</string>
+    <string name="bares">Bares</string>
+    <string name="playas">Playas</string>
+    <string name="local">Local</string>
+    <string name="hoteles">Hoteles</string>
+    <string name="start_with_local">Comenzar con Locales</string>
+    <string name="start_with_transport">Comenzar con Transporte</string>
+    <string name="motorcycle_taxi">Moto taxi</string>
 </resources>

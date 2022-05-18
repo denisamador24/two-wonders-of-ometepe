@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -20,7 +19,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/soft_grey">
+            android:background="@drawable/ojo_de_agua">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView4"
@@ -43,21 +42,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-            <EditText
-                android:id="@+id/editText"
-                style="@style/Style_InputName"
-                android:layout_marginTop="14dp"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CardViewListItem"
+                android:layout_marginHorizontal="32dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
 
-            <EditText
-                android:id="@+id/editText2"
-                style="@style/InputPassword"
-                android:layout_marginTop="14dp"
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    style="@style/Style_InputName"
+                    android:layout_marginHorizontal="0dp"
+                    android:layout_marginTop="0dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                style="@style/CardViewListItem"
+                android:layout_marginHorizontal="32dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    style="@style/InputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="0dp" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
 
             <Button
                 android:id="@+id/button"
@@ -67,7 +89,7 @@
                 android:text="@string/login"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
             <TextView
                 android:id="@+id/textView8"

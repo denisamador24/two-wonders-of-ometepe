@@ -176,11 +176,13 @@
 
                         <EditText
                             android:id="@+id/editText8"
+                            android:textColor="@color/dark_blue"
                             style="@style/CardView_InputEditText"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="14dp"
                             android:maxWidth="200dp"
+
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/textView9"
                             app:layout_constraintStart_toStartOf="parent"

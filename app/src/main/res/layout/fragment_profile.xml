@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileFragment"
-    android:background="@color/soft_grey">
+    android:background="@drawable/ojo_de_agua">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/name"
+                android:textColor="@color/white"
                 style="@style/Text_Md"/>
 
             <androidx.cardview.widget.CardView

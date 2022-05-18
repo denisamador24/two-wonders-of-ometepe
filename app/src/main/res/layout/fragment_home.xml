@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    android:background="@drawable/ojo_de_agua">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
             android:layout_marginTop="16dp"
             android:gravity="center"
             android:text="@string/helloname"
+            android:textColor="@color/white"
             style="@style/TextTitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -40,14 +42,25 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginTop="14dp"
-            android:text="Start"
+            android:text="@string/start_with_local"
             style="@style/PrimaryButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/start_with_transport"
+            style="@style/PrimaryButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

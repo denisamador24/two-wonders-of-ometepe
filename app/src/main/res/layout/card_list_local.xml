@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/ojo_de_agua"
+            android:src="@drawable/xalli"
             android:scaleType="centerCrop"/>
 
         <TextView

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardListLocal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     style="@style/CardViewItem"
@@ -12,12 +13,14 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/cardListLocal_image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/xalli"
             android:scaleType="centerCrop"/>
 
         <TextView
+            android:id="@+id/cardlistLocal_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Text_Md"

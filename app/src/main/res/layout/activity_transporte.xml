@@ -168,15 +168,16 @@
     </HorizontalScrollView>
 
 
-    <FrameLayout
+    <fragment
         android:id="@+id/fragmentLayout_activityLugares"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        tools:layout="@layout/fragment_list_transport"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
-    </FrameLayout>
+    </fragment>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

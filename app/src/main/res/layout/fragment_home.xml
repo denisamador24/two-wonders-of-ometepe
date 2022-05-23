@@ -41,7 +41,7 @@
 
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/fragmentHome_buttonLocals"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginTop="24dp"
@@ -52,7 +52,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/fragmentHome_buttonTransport"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginTop="14dp"
@@ -60,7 +60,7 @@
             style="@style/PrimaryButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            app:layout_constraintTop_toBottomOf="@+id/fragmentHome_buttonLocals" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

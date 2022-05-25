@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ojo_de_agua"
+    android:background="@color/light_green"
     tools:context=".LugaresActivity">
 
     <HorizontalScrollView
@@ -92,7 +92,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewPlaya"
+                android:id="@+id/cardViewBeach"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
@@ -166,7 +166,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewEcoturismo"
+                android:id="@+id/cardViewPark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"

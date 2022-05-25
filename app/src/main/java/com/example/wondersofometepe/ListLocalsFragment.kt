@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wondersofometepe.data.LocalAdapter
+import com.example.wondersofometepe.adapter.LocalAdapter
+import com.example.wondersofometepe.adapter.LocalHolder
+import com.example.wondersofometepe.adapter.RecreationalSpaceAdapter
 import com.example.wondersofometepe.data.LocalProvider
 
 // TODO: Rename parameter arguments, choose names that match
@@ -20,17 +22,17 @@ private const val ARG_PARAM2 = "param2"
  * Use the [ListLocalsFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ListLocalsFragment() : Fragment() {
-    // TODO: Rename and change types of parameters
+class ListLocalsFragment(val categoty: String) : Fragment() {
+   /* // TODO: Rename and change types of parameters
     private var param1: String? = null
-    private var param2: String? = null
+    private var param2: String? = null*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
+       /* arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-        }
+        } */
     }
 
     override fun onCreateView(
@@ -42,12 +44,20 @@ class ListLocalsFragment() : Fragment() {
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.fragmentListLocal_Recyclerview)
         recyclerView.layoutManager = LinearLayoutManager(view.context)
-        recyclerView.adapter = LocalAdapter(LocalProvider.locals)
+
+
+        when (categoty){
+            "restaurant" -> recyclerView.adapter = LocalAdapter(LocalProvider.restaurant)
+            "bar" -> recyclerView.adapter = LocalAdapter(LocalProvider.restaurant)
+            "beach" -> recyclerView.adapter = RecreationalSpaceAdapter(LocalProvider.playa)
+            "hotel" -> recyclerView.adapter = LocalAdapter(LocalProvider.hotel)
+            "park" -> recyclerView.adapter = RecreationalSpaceAdapter(LocalProvider.playa)
+        }
 
         return view
     }
 
-    companion object {
+    /*companion object {
         /**
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
@@ -65,5 +75,5 @@ class ListLocalsFragment() : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
-    }
+    }*/
 }

@@ -204,16 +204,17 @@
     </HorizontalScrollView>
 
 
-    <fragment
+    <include
         android:id="@+id/fragmentLayout_activityLugares"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        layout="@layout/fragment_list_locals"
         tools:layout="@layout/fragment_list_locals"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
-    </fragment>
+    </include>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@ class TransportAdapter(val listTransport: List<Transport>, val category: Int): R
     }
 
     override fun onBindViewHolder(holder: TransportHolder, position: Int) {
-
+        holder.render(listTransport[position], category)
     }
 
     override fun getItemCount(): Int = listTransport.size

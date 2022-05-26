@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 
 class LugaresActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lugares)
@@ -21,6 +22,8 @@ class LugaresActivity : AppCompatActivity() {
         cardBeach.setOnClickListener { replaceFragment(ListLocalsFragment("beach")) }
         cardHotel.setOnClickListener { replaceFragment(ListLocalsFragment("hotel")) }
         cardPark.setOnClickListener { replaceFragment(ListLocalsFragment("park")) }
+
+        randomFragmnet()
     }
 
     private fun replaceFragment (fragment: Fragment){
@@ -29,5 +32,16 @@ class LugaresActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragmentLayout_activityLugares, fragment)
         fragmentTransaction.commit()
+    }
+
+    private fun randomFragmnet(){
+        val num: Int = (1..5).random()
+        when(num){
+            1 -> replaceFragment(ListLocalsFragment("restaurant"))
+            2 -> replaceFragment(ListLocalsFragment("bar"))
+            3 -> replaceFragment(ListLocalsFragment("beach"))
+            4 -> replaceFragment(ListLocalsFragment("hotel"))
+            5 -> replaceFragment(ListLocalsFragment("park"))
+        }
     }
 }

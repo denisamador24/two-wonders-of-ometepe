@@ -12,17 +12,19 @@
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_add_taxi_capo.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_check_in.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_info_bus_barco.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_info_local.xml" value="0.33" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_info_taxi.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_info_local.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_info_space.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_info_taxi.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_lugares.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_transporte.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/activity_transporte.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/card_list_local.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/card_list_transport.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/fragment_list_locals.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/fragment_list_transport.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/layout/newg.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Wondersofometepe/app/src/main/res/menu/button_nav_main.xml" value="0.1" />

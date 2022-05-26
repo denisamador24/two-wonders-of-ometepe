@@ -1,220 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_green"
     tools:context=".LugaresActivity">
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/ojo_de_agua"
+        android:alpha="0.6"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewRestaurante"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                style="@style/CardViewItem"
-                android:gravity="center"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp"
-                app:cardUseCompatPadding="true">
+                android:orientation="horizontal">
 
-
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewRestaurante"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:animateLayoutChanges="true"
+                    style="@style/CardViewItem"
+                    android:gravity="center"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/icon_restaurant" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        style="@style/Text_Sm"
-                        android:layout_marginLeft="4dp"
-                        android:text="@string/restaurante" />
+                        android:orientation="horizontal"
+                        android:padding="4dp">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_restaurant" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                style="@style/CardViewItem"
-                android:gravity="center"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp"
-                app:cardUseCompatPadding="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            style="@style/Text_Sm"
+                            android:layout_marginLeft="4dp"
+                            android:text="@string/restaurante" />
 
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:animateLayoutChanges="true"
+                    style="@style/CardViewItem"
+                    android:gravity="center"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/icon_local_bar" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        style="@style/Text_Sm"
-                        android:text="@string/bares" />
+                        android:orientation="horizontal"
+                        android:padding="4dp">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_local_bar" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewBeach"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                style="@style/CardViewItem"
-                android:gravity="center"
-                android:orientation="vertical"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp"
-                app:cardUseCompatPadding="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            style="@style/Text_Sm"
+                            android:text="@string/bares" />
 
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewBeach"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:animateLayoutChanges="true"
+                    style="@style/CardViewItem"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/icon_beach_access" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        style="@style/Text_Sm"
-                        android:text="@string/playas" />
+                        android:orientation="horizontal"
+                        android:padding="4dp">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_beach_access" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            style="@style/Text_Sm"
+                            android:text="@string/playas" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewHoltes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                style="@style/CardViewItem"
-                android:gravity="center"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp"
-                app:cardUseCompatPadding="true">
-
-
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHoltes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:animateLayoutChanges="true"
+                    style="@style/CardViewItem"
+                    android:gravity="center"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/icon_hotel" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
 
-                        style="@style/Text_Sm"
-                        android:text="@string/hoteles" />
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_hotel" />
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+
+                            style="@style/Text_Sm"
+                            android:text="@string/hoteles" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewPark"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                style="@style/CardViewItem"
-                android:gravity="center"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp"
-                app:cardUseCompatPadding="true">
-
-
-                <LinearLayout
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewPark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:animateLayoutChanges="true"
+                    style="@style/CardViewItem"
+                    android:gravity="center"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/icon_sports_basketball" />
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
-                        style="@style/Text_Sm"
-                        android:text="@string/park" />
+                        android:orientation="horizontal"
+                        android:padding="4dp">
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_sports_basketball" />
 
-        </LinearLayout>
-    </HorizontalScrollView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            style="@style/Text_Sm"
+                            android:text="@string/park" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
 
 
-    <include
-        android:id="@+id/fragmentLayout_activityLugares"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        layout="@layout/fragment_list_locals"
-        tools:layout="@layout/fragment_list_locals"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+        <include
+            android:id="@+id/fragmentLayout_activityLugares"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            layout="@layout/fragment_list_locals"
+            tools:layout="@layout/fragment_list_locals"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
-    </include>
+        </include>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -56,7 +56,8 @@
                     android:id="@+id/editText"
                     android:layout_width="match_parent"
                     style="@style/Style_InputName"
-                    android:layout_marginHorizontal="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"/>
             </androidx.cardview.widget.CardView>
 
@@ -74,6 +75,8 @@
                     android:id="@+id/editText2"
                     style="@style/InputPassword"
                     android:layout_width="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
                     android:layout_marginTop="0dp" />
             </androidx.cardview.widget.CardView>
 

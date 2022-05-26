@@ -22,7 +22,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewRestaurante"
+                android:id="@+id/cardViewBus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
@@ -57,7 +57,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewBar"
+                android:id="@+id/cardViewTaxi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
@@ -92,7 +92,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewPlaya"
+                android:id="@+id/cardViewBarco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
@@ -129,7 +129,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewHoltes"
+                android:id="@+id/cardViewMotorCycle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
@@ -169,7 +169,7 @@
 
 
     <include
-        android:id="@+id/fragmentLayout_activityLugares"
+        android:id="@+id/fragmentLayout_activityTransport"
         android:layout_width="0dp"
         android:layout_height="0dp"
         layout="@layout/fragment_list_transport"

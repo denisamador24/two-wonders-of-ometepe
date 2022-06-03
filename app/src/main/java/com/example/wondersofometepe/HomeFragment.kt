@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -40,6 +41,9 @@ class HomeFragment : Fragment() {
 
         val buttonLocals = view.findViewById<Button>(R.id.fragmentHome_buttonLocals)
         val buttonTransport = view.findViewById<Button>(R.id.fragmentHome_buttonTransport)
+
+        val homeTitle = view.findViewById<TextView>(R.id.textViewHomeTitle)
+        homeTitle.visibility = View.GONE
 
         buttonLocals.setOnClickListener {
             val intent = Intent(view.context, LugaresActivity::class.java)

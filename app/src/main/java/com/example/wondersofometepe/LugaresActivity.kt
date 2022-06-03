@@ -1,5 +1,6 @@
 package com.example.wondersofometepe
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment
 
 class LugaresActivity : AppCompatActivity() {
 
+    @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lugares)
@@ -17,11 +19,51 @@ class LugaresActivity : AppCompatActivity() {
         val cardHotel = findViewById<CardView>(R.id.cardViewHoltes)
         val cardPark = findViewById<CardView>(R.id.cardViewPark)
 
-        cardRestaurant.setOnClickListener { replaceFragment(ListLocalsFragment("restaurant")) }
-        cardBars.setOnClickListener { replaceFragment(ListLocalsFragment("bar")) }
-        cardBeach.setOnClickListener { replaceFragment(ListLocalsFragment("beach")) }
-        cardHotel.setOnClickListener { replaceFragment(ListLocalsFragment("hotel")) }
-        cardPark.setOnClickListener { replaceFragment(ListLocalsFragment("park")) }
+        cardRestaurant.setOnClickListener {
+            replaceFragment(ListLocalsFragment("restaurant"))
+
+            cardRestaurant.setCardBackgroundColor(R.color.card_soft_green)
+            cardBars.setCardBackgroundColor(R.color.white)
+            cardBeach.setCardBackgroundColor(R.color.white)
+            cardHotel.setCardBackgroundColor(R.color.white)
+            cardPark.setCardBackgroundColor(R.color.white)
+        }
+        cardBars.setOnClickListener {
+            replaceFragment(ListLocalsFragment("bar"))
+
+            cardRestaurant.setCardBackgroundColor(R.color.white)
+            cardBars.setCardBackgroundColor(R.color.card_soft_green)
+            cardBeach.setCardBackgroundColor(R.color.white)
+            cardHotel.setCardBackgroundColor(R.color.white)
+            cardPark.setCardBackgroundColor(R.color.white)
+        }
+        cardBeach.setOnClickListener {
+            replaceFragment(ListLocalsFragment("beach"))
+
+            cardRestaurant.setCardBackgroundColor(R.color.white)
+            cardBars.setCardBackgroundColor(R.color.white)
+            cardBeach.setCardBackgroundColor(R.color.card_soft_green)
+            cardHotel.setCardBackgroundColor(R.color.white)
+            cardPark.setCardBackgroundColor(R.color.white)
+        }
+        cardHotel.setOnClickListener {
+            replaceFragment(ListLocalsFragment("hotel"))
+
+            cardRestaurant.setCardBackgroundColor(R.color.white)
+            cardBars.setCardBackgroundColor(R.color.white)
+            cardBeach.setCardBackgroundColor(R.color.white)
+            cardHotel.setCardBackgroundColor(R.color.card_soft_green)
+            cardPark.setCardBackgroundColor(R.color.white)
+        }
+        cardPark.setOnClickListener {
+            replaceFragment(ListLocalsFragment("park"))
+
+            cardRestaurant.setCardBackgroundColor(R.color.white)
+            cardBars.setCardBackgroundColor(R.color.white)
+            cardBeach.setCardBackgroundColor(R.color.white)
+            cardHotel.setCardBackgroundColor(R.color.white)
+            cardPark.setCardBackgroundColor(R.color.card_soft_green)
+        }
 
         randomFragmnet()
     }
@@ -44,4 +86,5 @@ class LugaresActivity : AppCompatActivity() {
             5 -> replaceFragment(ListLocalsFragment("park"))
         }
     }
+
 }

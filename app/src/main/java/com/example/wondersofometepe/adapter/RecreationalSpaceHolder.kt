@@ -25,7 +25,7 @@ class RecreationalSpaceHolder(val view: View): RecyclerView.ViewHolder(view) {
             val intent = Intent(view.context, InfoSpaceActivity::class.java)
             intent.putExtra("name", item.name)
             intent.putExtra("imageUri",item.UriFoto)
-            intent.putExtra("adress", item.adress)
+            intent.putExtra("address", item.adress)
             intent.putExtra("description", item.description)
             view.context.startActivity(intent)
         }

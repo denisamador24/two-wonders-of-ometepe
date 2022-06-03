@@ -45,7 +45,6 @@ class ListLocalsFragment(val categoty: String) : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.fragmentListLocal_Recyclerview)
         recyclerView.layoutManager = LinearLayoutManager(view.context)
 
-
         when (categoty){
             "restaurant" -> recyclerView.adapter = LocalAdapter(LocalProvider.restaurant)
             "bar" -> recyclerView.adapter = LocalAdapter(LocalProvider.restaurant)

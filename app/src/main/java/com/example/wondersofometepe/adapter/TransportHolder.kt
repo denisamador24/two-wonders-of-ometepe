@@ -35,6 +35,7 @@ class TransportHolder(val view: View): RecyclerView.ViewHolder(view) {
         card.setOnClickListener {
             if (category == 1){
                 val intent = Intent(view.context, InfoTaxiActivity::class.java)
+                intent.putExtra("category", category)
                 intent.putExtra("fotoUri", item.fotoUri)
                 intent.putExtra("schedule", item.schedule)
                 intent.putExtra("route", item.route)
@@ -44,10 +45,11 @@ class TransportHolder(val view: View): RecyclerView.ViewHolder(view) {
                 intent.putExtra("description", item.description)
                 intent.putExtra("nameDriver", item.driver?.name)
                 intent.putExtra("cellNumberDriver", item.driver?.cellNumber)
-                intent.putExtra("foto", item.driver?.fotoUri)
+                intent.putExtra("fotoDriver", item.driver?.fotoUri)
                 view.context.startActivity(intent)
             } else if (category == 2){
                 val intent = Intent(view.context, InfoBusBarcoActivity::class.java)
+                intent.putExtra("category", category)
                 intent.putExtra("fotoUri", item.fotoUri)
                 intent.putExtra("schedule", item.schedule)
                 intent.putExtra("route", item.route)

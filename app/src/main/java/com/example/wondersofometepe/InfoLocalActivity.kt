@@ -1,10 +1,13 @@
 package com.example.wondersofometepe
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
 class InfoLocalActivity : AppCompatActivity() {
@@ -22,10 +25,12 @@ class InfoLocalActivity : AppCompatActivity() {
 
         val image = findViewById<ImageView>(R.id.activityInfoLugares_images)
         val phoneNumber = findViewById<TextView>(R.id.activityInfoLugares_phoneNumber)
+        val cardPhoneNumber = findViewById<CardView>(R.id.activityInfoLugares_cardPhoneNumber)
         val address = findViewById<TextView>(R.id.activityInfoLugares_address)
         val schedule = findViewById<TextView>(R.id.activityInfoLugares_schedule)
         val cardCalendar = findViewById<CardView>(R.id.activityInfoLugares_cardCalendar)
         val email = findViewById<TextView>(R.id.activityInfoLugares_email)
+        val cardEmail = findViewById<CardView>(R.id.activityInfoLugares_cardEmail)
         val description = findViewById<TextView>(R.id.activityInfoLugares_description)
 
         image.setImageResource(FotoUri)
@@ -37,10 +42,20 @@ class InfoLocalActivity : AppCompatActivity() {
         cardCalendar.visibility = View.GONE
 
         if (textEmail.equals("")){
-            email.visibility = View.GONE
+            cardEmail.visibility = View.GONE
         } else {
             email.text = textEmail
         }
 
+        cardPhoneNumber.setOnClickListener {
+            val intent = Intent(Intent.ACTION_DIAL)
+            intent.data = Uri.parse("tel:$textPhoneNumber")
+            startActivity(intent)
+        }
+
+    }
+
+    override fun onBackPressed() {
+        finish()
     }
 }

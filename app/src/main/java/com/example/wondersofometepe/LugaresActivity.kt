@@ -67,7 +67,30 @@ class LugaresActivity : AppCompatActivity() {
             cardPark.setCardBackgroundColor(colorGreenCard)
         }
 
-        randomFragmnet()
+        val num: Int = (1..5).random()
+        when(num){
+            1 -> {
+                replaceFragment(ListLocalsFragment("restaurant"))
+                cardRestaurant.setCardBackgroundColor(colorGreenCard)
+            }
+            2 -> {
+                replaceFragment(ListLocalsFragment("bar"))
+                cardBars.setCardBackgroundColor(colorGreenCard)
+            }
+            3 -> {
+                replaceFragment(ListLocalsFragment("beach"))
+                cardBeach.setCardBackgroundColor(colorGreenCard)
+            }
+            4 -> {
+                replaceFragment(ListLocalsFragment("hotel"))
+                cardHotel.setCardBackgroundColor(colorGreenCard)
+            }
+            5 -> {
+                replaceFragment(ListLocalsFragment("park"))
+                cardHotel.setCardBackgroundColor(colorGreenCard)
+            }
+        }
+
     }
 
     private fun replaceFragment (fragment: Fragment){
@@ -76,17 +99,6 @@ class LugaresActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragmentLayout_activityLugares, fragment)
         fragmentTransaction.commit()
-    }
-
-    private fun randomFragmnet(){
-        val num: Int = (1..5).random()
-        when(num){
-            1 -> replaceFragment(ListLocalsFragment("restaurant"))
-            2 -> replaceFragment(ListLocalsFragment("bar"))
-            3 -> replaceFragment(ListLocalsFragment("beach"))
-            4 -> replaceFragment(ListLocalsFragment("hotel"))
-            5 -> replaceFragment(ListLocalsFragment("park"))
-        }
     }
 
 }

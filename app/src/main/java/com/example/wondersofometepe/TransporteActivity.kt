@@ -3,6 +3,7 @@ package com.example.wondersofometepe
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 
@@ -52,6 +53,27 @@ class TransporteActivity : AppCompatActivity() {
             cardTaxi.setCardBackgroundColor(colorWhiteCard)
             cardBarco.setCardBackgroundColor(colorWhiteCard)
             cardMotoCycle.setCardBackgroundColor(colorGreenCard)
+        }
+
+        val num: Int = (1..4).random()
+        when(num){
+            1 -> {
+                replaceFragment(ListTransportFragment(1))
+                cardBus.setCardBackgroundColor(colorGreenCard)
+            }
+            2 -> {
+                replaceFragment(ListTransportFragment(2))
+                cardTaxi.setCardBackgroundColor(colorGreenCard)
+            }
+            3 -> {
+               replaceFragment(ListTransportFragment(3))
+                cardBarco.setCardBackgroundColor(colorGreenCard)
+            }
+            4 -> {
+                replaceFragment(ListTransportFragment(4))
+                cardMotoCycle.setCardBackgroundColor(colorGreenCard)
+            }
+            else -> Toast.makeText(this, "Fragmnet no encontrado", Toast.LENGTH_SHORT).show()
         }
     }
 

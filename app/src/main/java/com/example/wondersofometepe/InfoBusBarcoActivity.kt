@@ -14,7 +14,7 @@ class InfoBusBarcoActivity : AppCompatActivity() {
         val foto = intent.getIntExtra("fotoUri", R.drawable.img_bus_ometepe)
         val schedule = intent.getStringExtra("schedule")
         val route = intent.getStringExtra("route")
-        val maxP = intent.getStringExtra("maxP")
+        val maxP = intent.getIntExtra("maxP", 0)
         val price = intent.getStringExtra("price")
         val license = intent.getStringExtra("license")
         val description = intent.getStringExtra("description")
@@ -29,7 +29,7 @@ class InfoBusBarcoActivity : AppCompatActivity() {
         viewRoute.text = route
         viewSchedule.text = schedule
         viewPrice.text = price
-        viewMaxP.text = maxP
+        viewMaxP.text = maxP.toString()
         viewFoto.setImageResource(foto)
         viewDescription.text = description
     }

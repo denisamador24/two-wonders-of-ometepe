@@ -21,6 +21,13 @@ class LocalHolder(val view: View): RecyclerView.ViewHolder(view) {
 
         card.setOnClickListener {
             val intent = Intent(view.context, InfoLocalActivity::class.java)
+            intent.putExtra("name", listLocalModel.name)
+            intent.putExtra("foto", listLocalModel.fotoUri)
+            intent.putExtra("address", listLocalModel.address)
+            intent.putExtra("phoneNumber", listLocalModel.cellNumber)
+            intent.putExtra("description", listLocalModel.description)
+            intent.putExtra("schedule", listLocalModel.schedule)
+            intent.putExtra("email", listLocalModel.email)
             view.context.startActivity(intent)
         }
     }

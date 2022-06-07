@@ -67,7 +67,7 @@
                                 android:id="@+id/activityInfoBusBarco_route"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/schedule"
+                                android:text="@string/route"
                                 style="@style/Text_Sm"/>
                         </LinearLayout>
 
